@@ -39,6 +39,6 @@ class BasePage {
 
     void assertText(By element, String text) throws InterruptedException {
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
-        Assert.assertEquals(driver.findElement(element).getText(),"");
+        Assert.assertEquals(driver.findElement(element).getText(),text);
     }
 }
